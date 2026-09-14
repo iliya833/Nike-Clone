@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import './Header.css'
 import { LuSearch, LuHeart, LuShoppingBag } from "react-icons/lu"
+import air from "../assets/air.jpg"
+import nike from "../assets/nike.jpg"
+import coverce from "../assets/Converse_shoe_company_logo.png"
 
 function Header() {
 
@@ -294,12 +297,12 @@ function Header() {
 
           <div className='brands'>
             <img
-              src='src/assets/air.jpg'
+              src={air}
               alt="Jordan"
             />
 
             <img
-              src='src/assets/Converse_shoe_company_logo.png'
+              src={coverce}
               alt="Converse"
             />
           </div>
@@ -330,7 +333,7 @@ function Header() {
 
         <div className='nike-logo1'>
           <img
-            src='src/assets/nike.jpg'
+            src={nike}
             className='nike'
             alt="Nike"
           />

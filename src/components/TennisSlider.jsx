@@ -26,23 +26,23 @@ function TennisSlider() {
   const players = [
     {
       name: "Aryna Sabalenka",
-      image:  "/images/zib2.png",
+      image:  {Woman4Image}
     },
     {
       name: "Naomi Osaka",
-      image: "/images/Woman2.jpg",
+      image: {Woman2Image}
     },
     {
       name: "Serena Williams",
-      image: "/images/zib3.png",
+      image: {Woman5Image}
     },
     {
       name: "Coco Gauff",
-      image:"/images/zib.png",
+      image:{Woman3Image}
     },
     {
       name: "Iga Swiatek",
-      image: "/images/Woman.jpg",
+      image: {WomanImage}
     },
   ];
 
