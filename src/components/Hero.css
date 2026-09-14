@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: "Inter", sans-serif;
+}
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+.hero-media {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+
+  color: white;
+
+  z-index: 2;
+
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  line-height: 0.95;
+  font-weight: 900;
+
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.4;
+
+  margin-bottom: 25px;
+
+  max-width: 450px;
+}
+
+.hero-content button {
+  border: none;
+
+  padding: 14px 28px;
+
+  border-radius: 30px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.hero::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 55%;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.95),
+    rgba(0, 0, 0, 0)
+  );
+
+  z-index: 1;
+}
+
+.im{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center 35%;
+}
+
+.grid-content {
+  text-align: center;
+  padding: 55px 20px 70px;
+  background: #fff;
+}
+
+.grid-content h1 {
+  margin: 0;
+  font-size: 72px;
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.grid-content p {
+  margin: 22px 0 35px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+}
+
+.grid-content button {
+  border: none;
+  background: #111827;
+  color: white;
+  padding: 15px 27px;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.categories {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 20px 24px;
+  box-sizing: border-box;
+}
+
+.category {
+  width: 100%;
+}
+
+.category img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.category p {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.iliya{
+  margin-left: 75px;
+  font-size: 50%;
+  
+}
+
+.logo{
+
+  height: 100px;
+  width: 100px;
+  margin-left: 690px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+}

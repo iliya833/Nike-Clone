@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: "Inter", sans-serif;
+}
+
+
+
+.nike-logo-frame {
+  width: 60px;
+  height: 90px;
+  border: 2px solid #555;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  margin-top: 150px;
+  margin-bottom: 40px;
+  margin-left: 47%;
+}
+
+/* لوگو پشت خطوط */
+.nike-logo-frame img {
+  width: 45px;
+  position: relative;
+  z-index: 1;
+}
+
+/* خط بالایی */
+.nike-logo-frame::before {
+  content: "";
+  position: absolute;
+
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+
+  background-color: #555;
+  z-index: 2;
+}
+
+/* خط پایینی */
+.nike-logo-frame::after {
+  content: "";
+  position: absolute;
+
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+
+  background-color: #555;
+  z-index: 2;
+}
+
+/* خط عمودی وسط */
+.nike-logo {
+  position: absolute;
+
+  top: 10px;
+  left: 50%;
+
+  width: 2px;
+  height: 70px;
+
+  background-color: #555;
+
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.nike{
+    height: 50px;
+    width: 300px;
+
+}
+
+.Nike-grid{
+
+width: 100%px;
+height: 100%px;
+overflow: hidden;
+}
+
+.Nike-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-images {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hero-box {
+  height: 120%;
+  overflow: hidden;
+}
+
+.hero-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* متن روی عکس */
+
+.hero-text2 {
+  position: absolute;
+ top: 2420px;
+  left: 55px;
+  bottom: 35px;
+  z-index: 2;
+  color: white;
+  max-width: 650px;
+}
+
+.hero-text2 h1 {
+  margin: 0 0 10px;
+  font-size: 58px;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -2px;
+}
+
+.hero-text2 p {
+  margin: 0 0 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.hero-text2 button {
+  border: none;
+  background: white;
+  color: black;
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
