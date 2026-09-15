@@ -1,10 +1,11 @@
 import { useRef } from "react";
 import "./TennisSlider.css";
-import WomanImage from '../assets/Woman.jpg'
+import WomanImage from "../assets/Woman.jpg"
 import Woman2Image from '../assets/Woman2.jpg'
 import Woman3Image from '../assets/zib.png'
 import Woman4Image from '../assets/zib2.png'
 import Woman5Image from '../assets/zib3.png'
+import nike from "../assets/nike.jpg"
 
 function TennisSlider() {
   const sliderRef = useRef(null);
@@ -26,28 +27,29 @@ function TennisSlider() {
   const players = [
     {
       name: "Aryna Sabalenka",
-      image:  {Woman4Image}
+      image:  Woman4Image
     },
     {
       name: "Naomi Osaka",
-      image: {Woman2Image}
+      image: Woman2Image
     },
     {
       name: "Serena Williams",
-      image: {Woman5Image}
+      image: Woman5Image
     },
     {
       name: "Coco Gauff",
-      image:{Woman3Image}
+      image:Woman3Image
     },
     {
       name: "Iga Swiatek",
-      image: {WomanImage}
+      image: WomanImage
     },
   ];
 
   return (
     <>
+   
     <section className="tennis-section">
 
       <div className="slider-buttons">
@@ -72,7 +74,7 @@ function TennisSlider() {
     <div>
           <section className="nike-logo-frame">
             
-            <img src='src\assets\nike.jpg' className="nike"></img>
+            <img src={nike} className="nike"></img>
             <div className="nike-logo">
             </div>
          </section>
